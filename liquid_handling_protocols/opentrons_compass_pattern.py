@@ -77,12 +77,12 @@ def run(protocol: protocol_api.ProtocolContext):
 
     def compass_mix_pattern(
         plate,
-        well,
-        num_mixes_at_each_point,
-        mm_from_center,
-        volume,
-        mm_from_bottom,
-        mix_rate,
+        well: str,
+        num_mixes_at_each_point: int,
+        mm_from_center: float,
+        volume: float,
+        mm_from_bottom: float,
+        mix_rate: float,
     ):
         """
         Performs a mixing pattern in a specified well of a plate using a compass pattern: center,
